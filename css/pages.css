@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+/*title*/
+	div.title {
+		background: url(../upload/bg-banner.jpg) 50% top no-repeat;
+		padding: 9rem 2rem 2rem;
+	}
+	div.title>h1,
+	div.title>h2,
+	div.title>p {
+		font-weight: 400;
+		color: #fff;
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 0;
+	}
+	div.title>div.bg-title {
+		height: 4rem;
+		background: url(../images/layout/bg-title.gif) 50% top repeat-y;
+		margin-bottom: .5rem;
+	}
+	div.pTitle>h1 {}
+	div.pTitle>h2>span {
+		font-size: 1.15rem;
+		font-weight: 400;
+		color: #c69263;
+		text-transform: uppercase;
+		margin-left: .5rem;
+	}
+	div.pTitle>h2>span::before {content: "/"; margin-right: .5rem;}
+
+/*news*/
+	dl.News {margin-bottom: 2rem;}
+	dl.News>dd {margin-bottom: 2rem;}
+	dl.News>dd>div {
+		border: 1px solid #cdcdcd;
+		text-align: justify;
+		padding: .75rem;
+	}
+	dl.News>dd>div>span {color: #0e8dd9;}
+	dl.News>dd>div>p {
+		line-height: 1.75rem;
+		margin-top: .85rem;
+		margin-bottom: 0;
+		/*多行文字限制*/
+		display: block; /*如果不是區塊元素的話，要加這一行 exsample <span>*/
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 3; /*N 填入要顯示的行數*/
+	}
+
+/*contact*/
+/*form*/
+	dl.form>dd {margin-bottom: 1.5rem;}
+	dl.form>dd>label>sup {color: #f00;}
+	dl.form>dd>textarea {height: 16rem;}
+
+/*contact info*/
+	div.contact-info {background: #ddd; padding: 1rem 1rem .75rem;}
+
+	/*contact-info*/
+		div.contact-info>dl.contact-info {margin-bottom: 2rem;}
+		div.contact-info>dl.contact-info>dt, div.title-form>h3 {
+			font-size: 1.5rem;
+			font-weight: 400;
+			margin-bottom: 1.5rem;
+		}
+		div.contact-info>dl.contact-info>dt>span, div.title-form>h3>span {
+			font-size: 1rem;
+			color: #d09c63;
+			text-transform: uppercase;
+			margin-left: .25rem;
+		}
+		div.contact-info>dl.contact-info>dd>span::before {color: #d09c63;}
+		div.contact-info>dl.contact-info>dd:last-of-type>span::before {margin-left: .15rem;}
+
+	/*map*/
+		div.map>iframe {width: 100% !important;}
+
+/*products*/
+	div.products {margin-bottom: 2rem;}
+	div.products>figure {
+		margin-bottom: 0;
+		position: relative;
+	}
+	div.products>figure>figcaption {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+	}
+	div.products>figure>figcaption>p {
+		font-size: 1.5rem;
+		color: #fff;
+	}
+	div.products>figure:hover>figcaption {background: rgba(0,0,0,.5);}
+
+	dl.prodNav>dd {
+		border-bottom: 1px dashed #ccc;
+		font-size: 1.15rem;
+		padding-left: .75rem;
+		padding-bottom: .5rem;
+	}
+	dl.prodNav>dd::before {
+		content: "\f105";
+		font-weight: 900;
+		margin-right: .25rem;
+	}
+	dl.prodNav>dd[active], dl.prodNav>dd[active]>a, dl.prodNav>dd>a:hover {color: #d09c63}
+
+/*show case*/
+	dl.showCase>dd>p {text-align: center;}
+	dl.showCase>dd>figure {
+	    max-width: 247px;
+	    max-height: 328px;
+	}
